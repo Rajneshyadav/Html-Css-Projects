@@ -1,0 +1,145 @@
+* {
+  font-family: Orbitron;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  margin: 40px;
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 25px 50px 0;
+}
+
+.navbar-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+.navbar-container img {
+  width: 110px;
+}
+
+div .list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(46, 46, 46);
+  margin: 10px 0;
+}
+
+.list .list-item {
+  cursor: pointer;
+}
+
+.list-item:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  transition: color, border-bottom all 0.5s linear;
+}
+
+.search-icon svg {
+  font-size: 12px;
+
+  width: 25px;
+}
+
+.button-group {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-column-end: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-group .nav-button {
+  width: 150px;
+  border-radius: 10px;
+  padding: 10px 5px;
+  margin: 0 10px;
+  cursor: text;
+}
+
+/* <!-- Hero Banner Section --> */
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 50px;
+}
+
+.hero-container div img {
+  width: 300px;
+}
+
+.hero-container .square img {
+  width: 250px;
+  position: absolute;
+  top: 300px;
+  left: 140px;
+  z-index: -1;
+}
+
+.hero-container .star img {
+  width: 40px;
+  position: absolute;
+  bottom: 130px;
+  left: 420px;
+}
+
+.m-btn {
+  margin-top: 50px;
+}
+
+.hero-container .globe img {
+  width: 50px;
+  margin-left: 100px;
+}
+
+.hero-container-right .star img {
+  width: 40px;
+  position: absolute;
+  top: 160px;
+  left: 1120px;
+}
+
+.hero-heading {
+  font-size: 40px;
+}
+
+.hero-container-right * {
+  text-align: center;
+}
+
+.icons span img {
+  width: 35px;
+}
+
+.icons span img {
+  margin: 8px;
+}
+
+.button-email {
+  padding: 2px 14px;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button-join {
+  cursor: pointer;
+  padding: 2px 12px;
+  font-size: 14px;
+  margin-left: 15px;
+  background: #000;
+  color: white;
+  border-radius: 10px;
+}
+
+.contact-heading {
+  margin-top: 80px;
+}
