@@ -1,4 +1,4 @@
-# Protfolio-Design-Landing Page 
+# Protfolio-Designed-Landing Page 
 
 This is basically a one pager website Template project made in HTML/CSS 
 A clean and nice This is imaginary landing page of website  for portfolio
