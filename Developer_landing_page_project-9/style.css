@@ -1,0 +1,399 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+
+:root {
+  --bg-color: blue;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  /* 62.5%= 10px */
+
+}
+
+body{
+   font-size: 1.7rem;
+   background: rgb(249, 249, 249);
+  }
+  /* Navbar */
+  
+  header{
+    background: rgb(15, 15, 189);
+    padding: 1rem 2rem;
+    color: white;
+  
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.6rem;
+}
+
+.logo {
+  width: 9rem;
+  margin-top: .7rem;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-link .nav-item-active {
+  font-size: 1.4rem;
+  background: white;
+  color: blue;
+  padding: .3rem .8rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.nav-link .search {
+  width: 5rem;
+  height: 2.3rem;
+}
+
+/* Navbar Ends */
+.header-text{
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit,minmax(35rem,1fr)) ;
+
+}
+
+.header-text .text{
+ margin: 8rem;
+   
+}
+
+.text *{
+   margin: 1rem 0;
+}
+.header-image{
+  float: right;
+  margin-top: 3rem;
+  border-radius: 3rem;
+  width: 40rem;
+   position: absolute;
+   right: 1rem;
+   
+}
+
+.companies{
+  margin-top: 1.6rem;
+  margin-left: 6rem;
+ 
+}
+
+.companies a{
+  padding: .2rem 1rem;
+  margin: 0 2rem;
+  font-family: "Righteous", sans-serif;
+  letter-spacing: 1px;
+  color: black;
+} 
+
+/* 
+<!-- API Section --> */
+
+.api{
+  padding: 1rem 2rem;
+}
+ .cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr)) ;
+  grid-gap: 1rem;
+   padding: .6rem;
+ }
+
+ .card:hover{
+
+   background: rgb(255, 255, 255);
+   padding: 2rem 0 2rem 2rem;
+   border-radius: 1rem;
+   box-shadow: 2px 2px 12px rgb(99, 99, 99);
+   cursor: pointer;
+   transition:  all 4s linear ease-in-out;
+  }
+
+  .card-active{
+    background: rgb(255, 255, 255);
+    padding: 2rem 0 2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 12px rgb(99, 99, 99);
+    cursor: pointer;
+ }
+
+
+ .arrow{
+  text-align: center;
+  width: fit-content;
+  font-size: 3rem;
+   
+  font-weight: 500;
+  color: white;
+  background: rgb(36, 70, 219);
+  border-radius: 10%;
+  position: absolute;
+  margin-top: 6.5rem;
+  right: 3rem;
+  cursor: pointer;
+ }
+ .card-head-active{
+  color: rgb(112, 17, 255);
+ }
+
+ /* Blog section */
+ .blog-heading{
+  padding: 1rem 2rem;
+}
+
+.blog-content h6{
+  color: rgb(112, 17, 255);
+
+  
+}
+
+.blog-content h3{
+  font-size: 2.2rem;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-weight: 100;
+}
+
+.blog-content small{
+  font-weight: 600;
+}
+.blog-cards{
+   padding: 1rem 2rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(25rem,1fr)) ;
+   grid-gap: 3rem;
+  }
+  
+  .blog-card{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(15rem,1fr)) ;
+   background:  linear-gradient( to right, rgb(224, 224, 224) 20%,rgb(255, 255, 255) 80%);
+   border-radius:3rem 1rem 1rem 1.5rem;
+}
+
+.image-text{
+  
+  border-radius: 0 1.5rem 1.5rem 0;
+  padding-top: 2rem;
+  justify-content: space-evenly;
+ 
+  
+ }
+
+ .blog-content *{
+   margin: 1rem 0;
+ }
+
+ .blog-bottom{
+ 
+   margin-top: 84px;
+}
+
+
+.blog-card-bottom-image{
+  box-shadow: 1px 1px 12px rgb(156, 156, 156),
+              -1px -1px 12px rgb(255, 255, 255);
+  border-radius: 50%;
+ }
+
+ 
+ .blog-author{
+  float: right;
+  margin: 0 1rem 0 0;
+
+ }
+  
+ .blog-image img{
+  width:90%;
+  }
+
+  /*     <!-- FAQ SECTION --> */
+
+  .faq-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+    padding: 0 2rem;
+   background: azure;
+   margin: 3rem 0;
+  }
+
+  .faq-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 2rem;
+  }
+
+  .faq-content h2{
+    font-weight: 1700;
+  }
+  
+  .faq-content button{
+     width: 20%;
+     padding: .8rem .5rem;
+     cursor: pointer;
+     border-radius: .4rem;
+     background: rgb(112, 17, 255);
+     color: white;
+     border: none;
+  }
+
+  .faq-image img{
+    width: 70%;
+    height: 100%;
+     float: right;
+  }
+
+  /*  <!-- Download --> */
+
+  .download-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 9rem 0;
+  }
+
+  .download-content {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+  }
+
+  .download-content span{
+    font-weight: 300;
+  }
+
+  .download-email form{
+    width:50rem;
+    background: #d3dada;
+    border:2px;
+    border-radius: 3rem;
+  }
+  
+  form input{
+    border-radius: 3rem;
+    width: 80%;
+    height: 100%;
+    padding: .9rem;
+    outline: none;
+    border: none;
+    background: #d3dada;
+  }
+
+  form:input{
+    padding: 1rem;
+  }
+  
+  form button{
+    width: 19%;
+    cursor: pointer;
+    border-radius: 3rem;
+    background: rgb(112, 17, 255);
+    padding: 0.8rem 1.3rem;
+    margin-right: 2px;
+    cursor: pointer;
+    border-radius: 3rem;
+    background: rgb(112, 17, 255);
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    margin: -.1px;
+}
+  
+/* <!-- Footer --> */
+
+.footer-section{
+  display: flex;
+  justify-content: space-between;
+  padding:5rem 2.5rem;
+  font-size: 1.5rem;
+  color: white;
+  
+  background: rgb(15, 15, 189);
+
+}
+
+.footer-left{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-logo{
+  width: 10rem;
+}
+
+.list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.list li{
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.list-items{
+  border: none;
+  border-right: 1px solid rgb(255, 255, 255);
+   
+}
+
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 25%;
+}
+
+.logos-list{
+  display: flex;
+  justify-content: space-evenly;  
+  cursor: pointer;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  cursor: pointer;
+  
+}
+
+.footer li{
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  padding: 0 ;
+}
+
+.list-items{
+  border-right: 1px solid white;
+
+}
