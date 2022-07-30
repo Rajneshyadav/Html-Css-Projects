@@ -1,0 +1,158 @@
+* {
+   overflow: hidden;
+}
+
+.navbar {
+   display: grid;
+   grid-template-columns: 0.4fr 1.8fr 0.2fr;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+}
+
+.navbar .logo {
+   width: 100px;
+   display: flex;
+   cursor: pointer;
+   align-self: flex-start;
+   margin-top: 15px;
+}
+
+.right-img {
+   width: 260px;
+   cursor: pointer;
+}
+
+.nav-items {
+   display: grid;
+   text-align: center;
+   grid-template-columns: repeat(5, 1fr);
+   justify-content: center;
+}
+
+.nav-item {
+   margin: 0 15px;
+   padding: 0 10px;
+   color: rgb(0, 0, 0);
+   font-size: 19px;
+   cursor: pointer;
+}
+
+.active-item {
+   color: rgb(255, 62, 8);
+}
+
+/* BANNER */
+
+.intro-section {
+   display: grid;
+   grid-template-columns: 1fr 0.6fr;
+   padding: 0 39px;
+}
+
+.product {
+   font-size: 30px;
+   font-weight: 500;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product img {
+   width: 45px;
+   margin: 7px 0 0 10px;
+}
+
+.heading {
+   font-size: 52px;
+   line-height: 1;
+   margin: 0 0 50px;
+   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.sub-headlines {
+   margin-top: 40px;
+   margin-left: 70px;
+   font-size: 25px;
+   font-weight: 300;
+   font-family: "Courier New", Courier, monospace;
+   margin-top: 1px;
+   cursor: pointer;
+}
+
+.text {
+   margin-top: 60px;
+}
+
+.sub-headlines * {
+   margin: 3px;
+}
+
+.sub-headlines img {
+   border-radius: 13px;
+   padding: 1px;
+   width: 17px;
+   background: rgb(255, 55, 0);
+}
+
+.action-btn {
+   margin: 68px 0 0 19px;
+   padding: 10px 0;
+   display: inline-block;
+   width: 145px;
+   border-radius: 25px;
+   background: rgb(255, 62, 8);
+   color: white;
+   font-size: 15px;
+   border: none;
+   cursor: pointer;
+}
+
+.headphone {
+   margin-top: 30px;
+   width: 85%;
+}
+
+.star {
+   position: absolute;
+   width: 130px;
+   bottom: 30%;
+}
+
+.h4 {
+   position: absolute;
+   bottom: 36%;
+   margin: 44px;
+   color: white;
+}
+
+.h1 {
+   position: absolute;
+   font-size: 45px;
+   bottom: 30%;
+   color: white;
+   margin: 30px;
+}
+
+.offer-text {
+   position: absolute;
+   bottom: 30%;
+   background: #000;
+}
+
+.dots {
+   display: flex;
+   justify-content: center;
+}
+
+.dot {
+   width: 20px;
+   background: rgb(255, 62, 8);
+   border-radius: 10px;
+   margin: 8px;
+   height: 20px;
+}
+
+.last-btn {
+   position: relative;
+   top: -33px;
+   right: -150px;
+}
