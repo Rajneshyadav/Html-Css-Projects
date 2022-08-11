@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#444;
+    --light-color:#777;
+    --bg-color:#e6e6e6;
+    --border:.1rem solid rgba(0,0,0,.2);
+    --box-shadow:.3rem .3rem .3rem #ccc,
+                -.3rem -.3rem .3rem #fff;
+    --box-shadow-inset:.3rem .3rem .3rem #ccc inset,
+                      -.3rem -.3rem .3rem #fff inset;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: var(--bg-color);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+nav img{
+    width: 70px;
+    height: 25px;
+    margin-left: 5%;
+    color: black;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-line{
+    width: 20%;
+    height: 1px;
+    background-color: black;
+    margin-left: 28%;
+}
+
+nav ul li{
+    text-transform: capitalize;
+    list-style: none;
+    margin: 0 25px;
+    font-size: 12px;
+    color: #919191;
+    box-shadow:  .2rem .2rem .1rem #ccc,
+                 -.2rem -.2rem .1rem #fff;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+nav ul li:hover{
+    transition: .8s;
+    box-shadow: inset .2rem .2rem .1rem #ccc,
+                inset  -.2rem -.2rem .1rem #fff;
+    color: black;
+}
+
+.navbar li:first-child{
+    color: black;
+}
+
+.main-image{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100vh;
+    width: 400px;
+    border-right: 10px solid  #ccc;
+}
+ 
+
+.right-side-box{
+    position: absolute;
+    right: 0%;
+    display: flex;
+    width: 65%;
+    top: 15%;
+}
+
+.upper-text, .lower-text{
+    font-size: 5rem;
+    font-family: 'Merriweather';
+}
+
+.upper-text{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
+.lower-text{
+    color: #333333;
+    margin-left: 70px;
+}
+
+.right-side-box p{
+    color: #858585;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 130px;
+    margin: 0 25px;
+}
+
+.social-icon{
+    margin-bottom: 30px;
+    margin-left: 24%;
+}
+
+.social-icon li{
+    list-style: none;
+    margin: 25px 0;
+    padding: 5px;
+    display:block;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    box-shadow: .1rem .1rem .1rem #ccc,
+               -.1rem -.1rem .1rem #fff;
+    padding: 8px;
+    border-radius:50% ;
+}
+
+.social-icon li:hover{
+    transition: .3s;
+    box-shadow: inset .1rem .1rem .1rem #ccc,
+    inset  -.1rem -.1rem .1rem #fff;
+    color: #27ae60;
+}
+.btn{
+    text-transform: capitalize;
+    padding: 10px 35px;
+    color: rgb(71, 71, 71);
+    position: absolute;
+    right: 15%;
+    top: 58%;
+    border: none;
+    font-weight: 700;
+    box-shadow:.22rem .22rem .1rem #ccc,
+    -.22rem -.22rem .1rem #fff;;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+ .btn:hover{
+    transition: .3s;
+    box-shadow: inset.22rem .22rem .1rem #ccc,
+                 inset -.22rem -.22rem .1rem #fff;;
+    cursor: pointer;
+    color: #27ae60;
+ }
+.down-side{
+    position: absolute;
+    right: 8%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+}
+
+.second-image{
+    width: 300px;
+    height: 130px;
+    margin-bottom: -10%;
+}
+
+.options li{
+    text-transform: capitalize;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #828282;
+    margin: 30px 0;
+}
+
+.options li:nth-child(1){
+    color: black;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #828282;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: inline-block;
+    box-shadow:   .1rem .1rem   #ccc,
+              -.1rem -.1rem   #fff;
+    
+}
+
+ 
+.first-dot{
+    background-color: black;
+}
+
+.line{
+    position: absolute;
+    width: 1px;
+    height: 220px;
+    background-color: #828282;
+    bottom: 0;
+    left: 4px;
+    z-index: -1;
+}
+
+.second-img i{
+    font-size: 2rem;
+}
+
+.second-img p{
+    font-size: 1em;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.arrow-line{
+    height: 90px;
+    width: 4px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+}
+
+.arrow i{
+    font-size: 30px;
+    position: absolute;
+    top: 78%;
+    left: 88.6%;
+}
